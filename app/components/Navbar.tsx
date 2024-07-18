@@ -29,7 +29,7 @@ function NavItem({ href, children }: NavItemProps) {
   return (
     <div className="relative py-0">
       <Link href={href}>
-        <div className="text-[1.1rem] relative group font-semibold">
+        <div className="text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] relative group font-semibold">
           {children}
           <span className={`block h-0.5 transition-all duration-300 ease-out origin-center mt-1 ${isActive ? 'w-full bg-black' : 'w-0 group-hover:w-full bg-black'}`}></span>
         </div>

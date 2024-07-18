@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./components/Navbar";
 import Callnowbutton from "./components/Callnowbutton";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,21 +14,20 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <div
-          className="hero min-h-screen relative"
-          style={{
-            backgroundImage: "url(/bloodsample.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            className="absolute inset-0"
-            style={{
-              background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7))",
-              
-            }}
-          ></div>
+        {/* Hero Section with Next.js Image Component and Linear Gradient */}
+        <div className="hero min-h-screen relative">
+          {/* Background Image */}
+          <Image
+            src="/bloodsample.jpg"
+            alt="Background Image"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            priority
+          />
+          {/* Overlay with Linear Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black opacity-80"></div>
+          {/* Content */}
           <div className="hero-content text-neutral-content text-center relative z-10">
             <div className="max-w-md mx-auto">
               <h1 className="mb-5 text-5xl font-bold text-white">Pathworld Healths</h1>
@@ -44,7 +44,7 @@ export default function Home() {
         {/* Responsive Steps Section */}
         <div className="bg-gray-800 py-10">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Steps to Get Your Blood Test Done</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-6">Steps to Get Your Blood Test Done</h2>
 
             {/* Mobile and Small Screens */}
             <div className="flex flex-col sm:hidden">

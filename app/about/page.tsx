@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -24,6 +25,12 @@ const MissionItem: React.FC<MissionItemProps> = ({ title, description, image }) 
 export default function Page() {
   return (
     <div>
+      <Head>
+        <title>Pathworld Health</title>
+        <meta name="description" content="Pathworld Health" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Navbar />
       <div className="bg-gray-200 py-10 text-black">
         <div className="container mx-auto px-4 mt-5">
