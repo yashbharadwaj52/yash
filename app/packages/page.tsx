@@ -330,7 +330,7 @@ export default function Page() {
           <Slider />
         </div>
         <div className="flex flex-wrap text-center font-sans text-3xl font-semibold justify-center mt-10">
-          <h1 className="px-10">
+          <h1 className="px-10 text-gray-900">
             Select a Package according to your requirements
           </h1>
         </div>

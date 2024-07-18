@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <div className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24 text-black">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-black">Welcome to BloodWise Services</h1>
+        <h1 className="text-4xl font-bold text-black">Welcome to our Services</h1>
         <p className="mt-4 text-lg text-gray-700">
           At BloodWise, we offer a range of comprehensive blood testing services to ensure your health and well-being.
           Our process is designed to be simple, convenient, and efficient, so you can get the care you need without any hassle.
@@ -126,7 +126,7 @@ const ServiceItem: React.FC<ServiceItemProps>  = ({ title, services }) => {
   return (
     <div className="mb-8">
       <h3 className="text-2xl font-medium text-gray-700 mb-4">{title}</h3>
-      <ul className="text-lg text-gray-600 space-y-2">
+      <ul className="text-lg text-gray-600 space-y-2 relative left-8">
         {services.map((service, index) => (
           <li key={index} className="flex items-center">
             <FaCheckCircle className="text-green-500 mr-2" />

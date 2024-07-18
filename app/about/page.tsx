@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -22,14 +22,10 @@ const MissionItem: React.FC<MissionItemProps> = ({ title, description, image }) 
   );
 };
 
-export default function Page() {
+const Page: React.FC = () => {
   return (
     <div>
-      <Head>
-        <title>Pathworld Health</title>
-        <meta name="description" content="Pathworld Health" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     
 
       <Navbar />
       <div className="bg-gray-200 py-10 text-black">
@@ -38,8 +34,8 @@ export default function Page() {
           <p className="text-xl text-center mb-3">
             We have partnered with Pathworld Healths Diagnostics Private Limited
           </p>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-20 mt-10">
-            <div className="mt-5 ml-10">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-2 md:mx-10 lg:mx-20 mt-10">
+            <div className="mt-5 ml-1 md:ml:5 lg:ml-10">
               <p className="text-lg text-gray-900 leading-relaxed">
                 Pathworld Healths Diagnostics Private Limited is India&apos;s first fully automated diagnostic laboratory, focused on providing quality at affordable costs to laboratories and hospitals in India and other countries.
               </p>
@@ -95,4 +91,6 @@ export default function Page() {
       <Footer />
     </div>
   );
-}
+};
+
+export default Page;

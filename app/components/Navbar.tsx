@@ -11,7 +11,7 @@ type NavItemProps = {
 export default function Navbar() {
   return (
     <div className="absolute top-0 left-0 w-full flex items-center justify-center text-black z-10">
-      <nav className="flex justify-around w-[75%] md:w-[60%] lg:w-[50%] space-x-1 bg-opacity-30 bg-gray-100 py-1 rounded-b-md shadow-xl hover:shadow-gray-500 hover:shadow-lg">
+      <nav className="flex justify-around w-[85%] md:w-[60%] lg:w-[50%] space-x-1 bg-opacity-30 bg-gray-100 py-1 rounded-b-md shadow-xl hover:shadow-gray-500 hover:shadow-lg">
         <NavItem href="/">Home</NavItem>
         <NavItem href="/packages">Packages</NavItem>
         <NavItem href="/features">Services</NavItem>
